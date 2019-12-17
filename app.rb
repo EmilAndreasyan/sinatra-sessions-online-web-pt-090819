@@ -5,6 +5,7 @@ class App < Sinatra::Base
     enable :sessions unless test?
     set :session_secret, "secret"
   end
+  
 
   before do
     content_type :txt
